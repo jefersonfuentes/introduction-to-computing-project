@@ -39,7 +39,7 @@ Funcion menu()
 		Escribir "D. Salir";
 		Escribir "Escoja su opción: " Sin Saltar;
 		Leer opc;
-		opc = Minusculas(opc);
+		opc = Minusculas(opc); // Formateo a la bandera opc para validar mayúsculas y minúsculas.
 		
 		Segun opc Hacer
 			Caso "a": 
