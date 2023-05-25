@@ -16,8 +16,14 @@ Funcion bienvenida()
 	Escribir " Verónica Aguero Aguilar C30084, Jeferson Fuentes García C33044, Nathaly Nuñez Ulate C35630.";
 	Escribir " ";
 	
-	Escribir "Ingrese su nombre para continuar: " Sin Saltar;
-	Leer nombre;
+	// Validación para que el usuario ingrese el nombre y no lo deje en blanco.
+	nombre = "";
+    Mientras nombre = ""
+        // Solicitar al usuario que ingrese su nombre
+        Escribir "Ingrese su nombre para continuar: ";
+        Leer nombre
+    FinMientras
+	
 	Escribir "Bienvenid@: ", nombre;
 	Escribir " ";
 	Escribir "Pulse cualquier tecla para continuar: " Sin Saltar;
