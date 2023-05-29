@@ -1,12 +1,16 @@
 //// Proyecto de introducción a la computación Grupo 21. Primera Entrega.
-// Integrantes:
-// Verónica Aguero Aguilar C30084, Jeferson Fuentes García C33044, Nathaly Nuñez Ulate C35630.
+//// Integrantes:
+//// Verónica Aguero Aguilar C30084, Jeferson Fuentes García C33044, Nathaly Nuñez Ulate C35630.
+
+// Algoritmo que contiene un menú de opciones que implementan diversas funciones para cada opción del menú.
 
 Algoritmo main
 	bienvenida();
 FinAlgoritmo
 
 Funcion bienvenida()	
+	// Función que presenta una bienvenida al usuario e información del programa, se decidió implementar debido a la modularazación del código.
+	
 	Definir nombre Como Cadena; // Se declara la variable que contiene el nombre del usuario.
 	
 	Escribir "Proyecto del curso IF1300 Introducción a la computación e informática";
@@ -18,13 +22,13 @@ Funcion bienvenida()
 	nombre = "";
     Mientras nombre = ""
         // Solicitar al usuario que ingrese su nombre
-		Escribir "Ingrese su nombre para continuar";
+		Escribir "Ingrese su nombre para continuar: ";
         Leer nombre;
     FinMientras
 	
 	Escribir "Bienvenid@: ", nombre;
 	Escribir " ";
-	Escribir "Pulse cualquier tecla para continuar: " Sin Saltar;
+	Escribir "Pulse cualquier tecla para continuar " Sin Saltar;
 	Esperar Tecla;
 	Limpiar Pantalla;
 	// Llamado a la función menu.
@@ -32,6 +36,8 @@ Funcion bienvenida()
 FinFuncion
 
 Funcion menu()
+	// Función Menu que contiene la opciones a ejecutar dentro del programa.
+	
 	// Declaración de bandera de control del menú.
 	Definir opc Como Caracter;
 	
@@ -74,7 +80,7 @@ Funcion menu()
 				Limpiar Pantalla;
 			De Otro Modo:
 				Escribir " ";
-				Escribir "Error, opción inválida, digite (A, B, C, D)";
+				Escribir "Error, opción inválida, digite (A, B, C, D)"; // Mensaje de validación ante un error en las opciones.
 				Escribir "Pulse cualquier tecla para continuar";
 				Esperar Tecla;
 				Limpiar Pantalla;
