@@ -110,23 +110,21 @@ Funcion mostrarPotencia <- calculaPotencia(num)
     // Esta función recibe un número entero "num" y calcula el cuadrado de ese número.
     // Luego, genera una cadena de texto que muestra la suma de los primeros "num" números impares.
 	
-    Definir cuadrado, impares Como Entero;
-    
-    cuadrado = num * num;
-    impares = 1;
-    i = 1;
-    mostrarPotencia = ConvertirATexto(num) + " elevado a la 2 es = ";
-    
-    Mientras i <= num Hacer
-        mostrarPotencia = mostrarPotencia + ConvertirATexto(impares);
-        impares = impares + 2;
-        Si i < num entonces
-            mostrarPotencia = mostrarPotencia + " + ";
-        FinSi;
-        i = i + 1;
-    FinMientras;
-    
-    mostrarPotencia = mostrarPotencia + " = " + ConvertirATexto(cuadrado);
+	Definir cuadrado, impares Como Entero;
+	
+	cuadrado = num * num;
+	impares = 1;
+	mostrarPotencia = ConvertirATexto(num) + " elevado a la 2 es = ";
+	
+	Para i = 1 Hasta num Hacer
+		mostrarPotencia = mostrarPotencia + ConvertirATexto(impares);
+		impares = impares + 2;
+		Si i < num entonces
+			mostrarPotencia = mostrarPotencia + " + ";
+		FinSi;
+	FinPara;
+	
+	mostrarPotencia = mostrarPotencia + " = " + ConvertirATexto(cuadrado);
     
 FinFuncion
 
